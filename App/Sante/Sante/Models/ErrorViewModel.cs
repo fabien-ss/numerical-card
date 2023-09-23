@@ -1,6 +1,6 @@
 namespace Sante.Models;
 
-public class ErrorViewModel
+public class rrorViewModel
 {
     public string? RequestId { get; set; }
 

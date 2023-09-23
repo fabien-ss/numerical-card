@@ -1,21 +1,23 @@
+using Npgsql;
+using Sante.Models.bdd;
+
 namespace Sante.Models.service;
 using System.Data.SqlClient;
 
-class Hopital{
+public class Hopital{
 
-    int id {get; set;}
-    string nom {get; set;}
+    public int id {get; set;}
+    public string nom {get; set;}
 
-    public void getHopitalById(){
-        string connectionString = "Data Source=<nom du serveur>;Initial Catalog=<nom de la base de données>;User ID=<nom d'utilisateur>;Password=<mot de passe>;";
-        using (SqlConnection connection = new SqlConnection(connectionString))
+    public void GetHopitalById(){
+        using (NpgsqlConnection connection = Connection.GetConnection())
         {
             connection.Open();
-            string sql = "SELECT * FROM Hopital WHERE Id = @id";
-            using (SqlCommand command = new SqlCommand(sql, connection))
+            string sql = "SELECT * FROM Hospital WHERE Id = @id";
+            using (NpgsqlCommand command = new NpgsqlCommand(sql, connection))
             {
                 command.Parameters.AddWithValue("@id", this.id);
-                using (SqlDataReader reader = command.ExecuteReader())
+                using (NpgsqlDataReader reader = command.ExecuteReader())
                 {
                     if (reader.Read())
                     {

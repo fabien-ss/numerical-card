@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\numerical-card\\App\\Sante\\Sante\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Sante.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Sante.bundle.scp.css"
-    },
-    {
       "Id": "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\numerical-card\\App\\Sante\\Sante\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

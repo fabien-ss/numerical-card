@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hts3Hw1BwwW7aNhKdvjDSUj9D+rlYrD1CwItQ3Xf7LA=",
+  "Hash": "hKJNnjpH4vWrPw0wiQZP4EKsAW3zPsx8zwWgHWK9c6g=",
   "Source": "Sante",
   "BasePath": "_content/Sante",
   "Mode": "Default",
@@ -16,40 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\numerical-card\\App\\Sante\\Sante\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Sante.styles.css",
-      "SourceId": "Sante",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\numerical-card\\App\\Sante\\Sante\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/Sante",
-      "RelativePath": "Sante.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\numerical-card\\App\\Sante\\Sante\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Sante.styles.css"
-    },
-    {
-      "Identity": "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\numerical-card\\App\\Sante\\Sante\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Sante.bundle.scp.css",
-      "SourceId": "Sante",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\numerical-card\\App\\Sante\\Sante\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/Sante",
-      "RelativePath": "Sante.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\numerical-card\\App\\Sante\\Sante\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Sante.bundle.scp.css"
-    },
     {
       "Identity": "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\numerical-card\\App\\Sante\\Sante\\wwwroot\\css\\site.css",
       "SourceId": "Sante",

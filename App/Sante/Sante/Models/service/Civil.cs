@@ -26,20 +26,6 @@ public class Civil
         }
     } 
     
-    public string Nom { get; set; }
-
-    public string getNom()
-    {
-        return this.nom;
-    }
-    public List<PersonDesease> getDeseases()
-    {
-        return this.deseases;
-    }
-    public void setCin(string cin)
-    {
-        this.cin = cin ?? throw new ArgumentException("Cin invalide");
-    }
     public string getCin(){ return this.cin; }
     
     public void GetCivilByCin()

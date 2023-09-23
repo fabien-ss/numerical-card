@@ -20,7 +20,7 @@ public class PersonDesease{
             string sql = "SELECT * From person_desease WHERE cin = @id";
             using (NpgsqlCommand command = new NpgsqlCommand(sql, connection))
             {
-                command.Parameters.AddWithValue("@id", this.civil.getCin());
+                command.Parameters.AddWithValue("@id", this.civil.cin);
                 using (NpgsqlDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())

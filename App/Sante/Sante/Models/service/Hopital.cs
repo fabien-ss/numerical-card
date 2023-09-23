@@ -9,43 +9,23 @@ public class Hopital{
     public int id {get; set;}
     public string nom {get; set;}
 
-    public void GetHopitalById(){
-        using (NpgsqlConnection connection = Connection.GetConnection())
+    public void GetHopitalById()
+    {
+        using var connection = Connection.GetConnection();
+        connection.Open();
+        const string sql = "SELECT * FROM Hospital WHERE Id = @id";
+        using (var command = new NpgsqlCommand(sql, connection))
         {
-            connection.Open();
-            string sql = "SELECT * FROM Hospital WHERE Id = @id";
-            using (NpgsqlCommand command = new NpgsqlCommand(sql, connection))
+            command.Parameters.AddWithValue("@id", this.id);
+            using (var reader = command.ExecuteReader())
             {
-                command.Parameters.AddWithValue("@id", this.id);
-                using (NpgsqlDataReader reader = command.ExecuteReader())
+                if (reader.Read())
                 {
-                    if (reader.Read())
-                    {
-                        this.id = (int) reader["id"];
-                        this.nom = (string) reader["nom"];
-                    }
+                    this.id = (int) reader["id"];
+                    this.nom = (string) reader["nom"];
                 }
             }
-            connection.Close();
         }
-    }
-    public void setId(int id)
-    {
-        this.id = id;
-    }
-
-    public int getId()
-    {
-        return this.id;
-    }
-
-    public void setNom(string nom)
-    {
-        this.nom = nom ?? throw new ArgumentNullException(nameof(nom));
-    }
-
-    public string getNom()
-    {
-        return this.nom;
+        connection.Close();
     }
 }

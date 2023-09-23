@@ -5,11 +5,11 @@ public class Connection
 {
     public static NpgsqlConnection GetConnection()
     {
-        int Port = 5432;
-        string Host = "localhost";
-        string User = "postgres";
-        string Database = "sante";
-        string Password = "fabien";
+        const int Port = 5432;
+        const string Host = "localhost";
+        const string User = "postgres";
+        const string Database = "sante";
+        const string Password = "fabien";
         string connString =
             String.Format(
                 "Server={0};Username={1};Database={2};Port={3};Password={4};SSLMode=Prefer",

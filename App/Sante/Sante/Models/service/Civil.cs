@@ -4,6 +4,21 @@ using Sante.Models.bdd;
 
 public class Civil
 {
+    public Civil(){}
+    public Civil(string cin, string nom, string firstName, DateTime dateOfBirth, string birthPlace, string adresse, Civil father, Civil mother, DateTime deliveryDate, List<PersonDesease> deseases)
+    {
+        this.cin = cin;
+        this.nom = nom;
+        this.firstName = firstName;
+        this.dateOfBirth = dateOfBirth;
+        this.birthPlace = birthPlace;
+        this.adresse = adresse;
+        this.father = father;
+        this.mother = mother;
+        this.deliveryDate = deliveryDate;
+        this.deseases = deseases;
+    }
+
     public string cin { get; set; }
     public string nom{ get; set; }
     public string firstName{ get; set; }
@@ -11,33 +26,20 @@ public class Civil
     public string birthPlace{ get; set; }
     public string adresse{ get; set; }
     public Civil father { get; set; }
-    public Civil mother{ get; set; }
-    public DateTime deliveryDate{ get; set; }
-    public List<PersonDesease> deseases{ get; set; }
-
-    public string Cin
-    {
-        get{ return this.cin; }
-        set
-        {
-            if (string.IsNullOrEmpty(value)) throw new ArgumentException("aeaerzer")
-                ;
-            this.cin = value;
-        }
-    } 
-    
-    public string getCin(){ return this.cin; }
+    public Civil mother { get; set; }
+    public DateTime deliveryDate { get; set; }
+    public List<PersonDesease> deseases { get; set; }
     
     public void GetCivilByCin()
     {
         using (NpgsqlConnection connection = Connection.GetConnection())
         {
             connection.Open();
-            string sql = "SELECT * FROM Civil WHERE cin = @cin";
-            using (NpgsqlCommand command = new NpgsqlCommand(sql, connection))
+            const string sql = "SELECT * FROM Civil WHERE cin = @cin";
+            using (var command = new NpgsqlCommand(sql, connection))
             {
                 command.Parameters.AddWithValue("@cin", this.cin); // Add parameters this way
-                using (NpgsqlDataReader reader = command.ExecuteReader())
+                using (var reader = command.ExecuteReader())
                 {
                   
                     if (reader.Read())
@@ -58,11 +60,11 @@ public class Civil
                             this.mother.GetCivilByCin();
                         }
                         this.deliveryDate = (DateTime)reader["date_delivery"];
-                        PersonDesease pd = new PersonDesease();
-                        pd.civil = this;
+                        var pd = new PersonDesease
+                        {
+                            civil = this
+                        };
                         this.deseases = pd.getAllDeseasePerCivil();
-                        var data = pd;
-                        // Console.WriteLine(this.nom);
                     }
                 }
             }

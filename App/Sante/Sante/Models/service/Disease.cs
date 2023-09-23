@@ -1,25 +1,28 @@
 using Npgsql;
 using Sante.Models.bdd;
-using ArgumentNullException = System.ArgumentNullException;
-
 namespace Sante.Models.service;
 
 public class Disease{
+    public Disease(){}
+    public Disease(int id,string nom)
+    {
+        this.id = id;
+        this.nom = nom;
+    }
 
     public int id { get; set; }
-
     public string nom { get; set; }
 
     public void GetDiseaseById()
     {
-        using (NpgsqlConnection connection = Connection.GetConnection())
+        using (var connection = Connection.GetConnection())
         {
             connection.Open();
-            string sql = "SELECT * FROM disease WHERE Id = @id";
-            using (NpgsqlCommand command = new NpgsqlCommand(sql, connection))
+            const string sql = "SELECT * FROM disease WHERE Id = @id";
+            using (var command = new NpgsqlCommand(sql, connection))
             {
                 command.Parameters.AddWithValue("@id", this.id);
-                using (NpgsqlDataReader reader = command.ExecuteReader())
+                using (var reader = command.ExecuteReader())
                 {
                     if (reader.Read())
                     {
@@ -28,7 +31,6 @@ public class Disease{
                     }
                 }
             }
-
             connection.Close();
         }
     }

@@ -1,3 +1,10 @@
 # numerical-card
+intégration d'application banque, foncier et santé pour un unique service pour une personne.
 ## Architecture logicielle
-with ejb, corba 😔 and restApi 
+ejb, corba 😔 & restApi.
+## language
+java & c#.
+## framework
+dotnet mvc.
+## tools
+jetBrain Rider, netbeans.

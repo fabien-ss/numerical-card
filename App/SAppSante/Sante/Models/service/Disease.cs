@@ -1,7 +1,7 @@
 namespace Sante.Models.service;
 
 using Npgsql;
-using Sante.Models.bdd;
+
 public class Disease{
 
     public int id { get; set; }

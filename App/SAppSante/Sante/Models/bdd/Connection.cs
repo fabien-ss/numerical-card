@@ -1,5 +1,4 @@
 using Npgsql;
-namespace Sante.Models.bdd;
 
 public class Connection
 {

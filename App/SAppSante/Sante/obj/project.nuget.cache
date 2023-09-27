@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3juoBYUy9jc6OYDe2BhiBPF8ClZJkrG6hvcqXtjVQeOQtoIMsuqFI6cYBnagfOnUY8JU6RHglCiy3/Sijv5cEA==",
+  "dgSpecHash": "paW1MdESPuFJY7M5KczMkU2+PD+UpygQKsmpT44QSk/a8v/7hpyQjpzxWb7ZrrPeavc19ZUJ3VhsGoWzSheIKw==",
   "success": true,
-  "projectFilePath": "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\numerical-card\\App\\SApp Sante\\Sante\\Sante.csproj",
+  "projectFilePath": "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\numerical-card\\App\\SAppSante\\Sante\\Sante.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PROACTIF\\.nuget\\packages\\json\\1.0.1\\json.1.0.1.nupkg.sha512",
     "C:\\Users\\PROACTIF\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",

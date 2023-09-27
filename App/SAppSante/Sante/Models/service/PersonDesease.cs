@@ -1,5 +1,4 @@
 using Npgsql;
-using Sante.Models.bdd;
 
 namespace Sante.Models.service;
 public class PersonDesease{

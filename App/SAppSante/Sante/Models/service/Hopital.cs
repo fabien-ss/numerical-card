@@ -1,6 +1,5 @@
 namespace Sante.Models.service;
 
-using bdd;
 using Npgsql;
 
 public class Hopital{

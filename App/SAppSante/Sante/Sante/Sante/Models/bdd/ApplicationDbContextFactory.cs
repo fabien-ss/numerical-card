@@ -1,7 +1,6 @@
-namespace S5_RH.Models.bdd;
-
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+
+namespace Sante.Models.bdd;
 
 public static class ApplicationDbContextFactory
 {

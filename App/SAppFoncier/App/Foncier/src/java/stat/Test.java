@@ -19,7 +19,7 @@ public class Test implements TestRemote {
 
     @Override
     public String hello() {
-        return "Hello";//throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "Hello";
     }
 
     @Override
@@ -33,8 +33,6 @@ public class Test implements TestRemote {
         }
         return territoire;
     }
-    
-    
     
     public static void main(String[] args) {
         Territoire territoire = new Territoire();
@@ -54,7 +52,6 @@ public class Test implements TestRemote {
         Vector<Territoire> territoires = new Vector<>();
         try {
             territoires = territoire.selectAll(null);
-            //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
         } catch (Exception ex) {
             Logger.getLogger(Test.class.getName()).log(Level.SEVERE, null, ex);
         }

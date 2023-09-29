@@ -18,7 +18,7 @@ public class Banque extends Model implements Serializable {
     String idBanque;
     @Correspondance(nomColonne = "banque_name")
     String nom;
-
+    
     public Banque(String nom, String prefixe) throws Exception {
         //this.setPrefixe(prefixe);
         this.setNom(nom);

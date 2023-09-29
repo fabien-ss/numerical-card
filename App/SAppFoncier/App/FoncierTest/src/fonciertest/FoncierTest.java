@@ -31,10 +31,9 @@ public class FoncierTest {
             prop.put("org.omg.CORBA.ORBInitialHost",host);
             prop.put("org.omg.CORBA.ORBInitialPort",port);
             InitialContext context = new InitialContext(prop);
+            
             TestRemote greeting = (TestRemote) context.lookup("java:global/Foncier/Test!stat.TestRemote");
-            Territoire territoire = (Territoire) greeting.getTerritoire("000000000003");
-            System.out.println(territoire.getCin());
-            System.out.println(territoire.getAddresse());        
+            
             Vector<Territoire> t = greeting.getTerritoires("000000000003");
             for (Territoire territoire1 : t) {
                 System.out.println(territoire.getAddresse());

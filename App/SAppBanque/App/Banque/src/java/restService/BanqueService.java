@@ -4,17 +4,12 @@
  */
 package restService;
 
-import jakarta.ejb.EJB;
 import jakarta.jws.WebService;
 import jakarta.jws.WebMethod;
-import jakarta.jws.WebParam;
 import jakarta.ejb.Stateless;
 import java.util.Properties;
 import javax.naming.Context;
-import javax.naming.InitialContext;
-import service.Territoire;
 import stat.TestRemote;
-
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
@@ -25,10 +20,7 @@ import javax.naming.NamingException;
 @WebService(serviceName = "BanqueService")
 @Stateless()
 public class BanqueService {
-    
-    @EJB
-    public TestRemote test;
-    
+        
     public static TestRemote getTestRemote() throws NamingException{
         String host= "localhost";
         String port = "3700";
@@ -40,8 +32,12 @@ public class BanqueService {
         TestRemote greeting = (TestRemote) context.lookup("java:global/Foncier/Test!stat.TestRemote");
         return greeting;
     }
-
-    public BanqueService() throws NamingException {
+    
+    public static void main(String[] args) throws NamingException {
+        TestRemote test = getTestRemote();
+        System.err.println(test.hello());
+    }
+    public BanqueService() {
        // this.test = getTestRemote();
     }
     @WebMethod(operationName = "hello")

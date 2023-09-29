@@ -1,39 +1,44 @@
-using Npgsql;
+using System.ComponentModel.DataAnnotations.Schema;
+using Sante.Models.bdd;
 
 namespace Sante.Models.service;
-public class PersonDesease{
-    
-    public Civil civil { get; set; }
-    public Disease disease { get; set; }
-    public DateTime startDate { get; set; }
-    public DateTime endDate { get; set; }
-    public Hopital hopital { get; set; }
 
+[Table(("person_desease"))]
+public class PersonDesease{
+    [NotMapped]
+    public Civil civil { get; set; }
+    
+    [Column("cin")]
+    public String cin { get; set; }
+    [NotMapped]
+    public Disease disease { get; set; }
+    [Column("date_start")]
+    public DateTime startDate { get; set; }
+    [Column("date_end")]
+    public DateTime endDate { get; set; }
+    [NotMapped]
+    public Hopital hopital { get; set; }
+    [Column("id_desease")]
+    public int idDesease { get; set; }
+    [Column("idhopital")]
+    public int idhopital { get; set; }
+    
     public List<PersonDesease> GetAllDeseasePerCivil()
     {
-        var diseases = new List<PersonDesease>();
-        using var connection = Connection.GetConnection();
-        connection.Open();
-        const string sql = "SELECT * From person_desease WHERE cin = @id";
-        using (var command = new NpgsqlCommand(sql, connection))
+        var context = ApplicationDbContextFactory.Create();
+        var pD = context.personDeseases
+            .Where(p => p.cin == this.cin).ToList();
+        foreach (var p in pD)
         {
-            command.Parameters.AddWithValue("@id", this.civil.cin);
-            using (var reader = command.ExecuteReader())
+            p.hopital = new Hopital
             {
-                while (reader.Read())
-                {
-                    var pd = new PersonDesease();
-                    pd.disease = new Disease { id = (int)reader["id_desease"] };
-                    pd.disease.GetDiseaseById();
-                    pd.hopital = new Hopital { id = (int)reader["idHopital"] };
-                    pd.hopital.GetHopitalById();
-                    pd.startDate = (DateTime)reader["date_start"];
-                    pd.endDate = (DateTime)reader["date_end"];
-                    diseases.Add(pd);
-                }
-            }
+                id = p.idhopital
+            }.GetHopitalById();
+            p.disease = new Disease
+            {
+                id = p.idDesease
+            }.GetDiseaseById();
         }
-        connection.Close();
-        return diseases;
+        return pD;
     }
 }

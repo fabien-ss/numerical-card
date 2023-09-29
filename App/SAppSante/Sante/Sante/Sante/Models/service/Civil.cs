@@ -2,10 +2,9 @@ using System.Data;
 
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Sante.Models.bdd;
 
 namespace Sante.Models.service;
-
-using Npgsql;
 
 [Table("civil")]
 public class Civil
@@ -22,11 +21,16 @@ public class Civil
     [Column("place_of_birth")]
     public string birthPlace { get; set; }
     [Column("address_local")]
-    public string adresse { get; set; }
+    public string addresse { get; set; }
+    [Column("father")]
+    public string? fatherid { get; set; }
+    [Column("mother")]
+    public string? motherid { get; set; }
     [NotMapped]
     public Civil father { get; set; }
     [NotMapped]
     public Civil mother { get; set; }
+    
     [Column("date_delivery")]
     public DateTime deliveryDate { get; set; }
     [NotMapped]
@@ -34,41 +38,45 @@ public class Civil
     
     public void GetCivilByCin()
     {
-        var connection = Connection.GetConnection();
-        connection.Open();
-        const string sql = "SELECT * FROM Civil WHERE cin = @cin";
-        using (var command = new NpgsqlCommand(sql, connection))
+        using (var context = ApplicationDbContextFactory.Create())
         {
-            command.Parameters.AddWithValue("@cin", this.cin); // Add parameters this way
-            using (var reader = command.ExecuteReader())
+            var civil = context.civil
+                .FirstOrDefault(c => c.cin == this.cin);
+
+            if (civil != null)
             {
-                if (reader.Read()) // si il y a un résultat
+                this.nom = civil.nom;
+                this.firstName = civil.firstName;
+                this.dateOfBirth = civil.dateOfBirth;
+                this.birthPlace = civil.birthPlace;
+                this.addresse = civil.addresse;
+                this.deliveryDate = civil.deliveryDate;
+                
+                if (civil.fatherid != null)
                 {
-                    this.nom = (string) reader["nom"];
-                    this.firstName = (string) reader["first_name"];
-                    this.dateOfBirth = (DateTime) reader["date_of_birth"];
-                    this.birthPlace = (string) reader["place_of_birth"];
-                    this.adresse = (string) reader["address_local"];
-                    if (!reader.IsDBNull(reader.GetOrdinal("father"))) // Check for null values
-                    { // si le cin du père est présent
-                        this.father = new Civil { cin = (string) reader["father"] };
-                        this.father.GetCivilByCin();
-                    }
-                    if (!reader.IsDBNull(reader.GetOrdinal("mother"))) // Check for null values
-                    { // si le cin de la mère est présent
-                        this.mother = new Civil { cin = (string)reader["mother"] };
-                        this.mother.GetCivilByCin();
-                    }
-                    this.deliveryDate = (DateTime) reader["date_delivery"];
-                    var pd = new PersonDesease { civil = this };
-                    this.deseases = pd.GetAllDeseasePerCivil();
+                    this.father = new Civil
+                    {
+                        cin = civil.fatherid
+                    };
+                    this.father.GetCivilByCin(); // Assuming this is a method in the Civil class
                 }
-                else // not person for that cin
+
+                if (civil.motherid != null)
                 {
-                    throw new DataException("No cin match.");
+                    this.mother = new Civil
+                    {
+                        cin = civil.motherid
+                    };
+                    this.mother.GetCivilByCin(); // Assuming this is a method in the Civil class
                 }
+
+                var pd = new PersonDesease { cin = this.cin };
+                this.deseases = pd.GetAllDeseasePerCivil();
+            }
+            else
+            {
+                throw new DataException("No cin match.");
             }
         }
-        connection.Close();
     }
 }

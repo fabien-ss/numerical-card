@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "dotnet",
+            "name": "Dotnet configuration",
+            "projectPath": "E:/ITUNIVERSITY/S5/ArchitectureLogiciel/project/card/SAppSante/Sante/",
+            "args": ["run"],
+        },
+        
+    ]
+}

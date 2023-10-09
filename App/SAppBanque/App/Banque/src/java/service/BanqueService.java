@@ -2,26 +2,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/WebServices/EjbWebService.java to edit this template
  */
-package restService;
+package service;
 
-import civil.CivilHandler;
 import jakarta.jws.WebService;
 import jakarta.jws.WebMethod;
 import jakarta.ejb.Stateless;
 import java.util.Properties;
+import java.util.Vector;
 import javax.naming.Context;
-import stat.TestRemote;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import model.Civil;
-import service.Territoire;
+import model.Territoire;
 
 /**
  *
  * @author PRO112
  */
-@WebService(serviceName = "BanqueService")
-@Stateless()
+
 public class BanqueService {
         
     public static TestRemote getTestRemote() throws NamingException{
@@ -32,21 +30,22 @@ public class BanqueService {
         prop.put("org.omg.CORBA.ORBInitialHost",host);
         prop.put("org.omg.CORBA.ORBInitialPort",port);
         InitialContext context = new InitialContext(prop);
-        TestRemote greeting = (TestRemote) context.lookup("java:global/Foncier/Test!stat.TestRemote");
+        TestRemote greeting = (TestRemote) context.lookup("java:global/Foncier/Test!service.TestRemote");
         return greeting;
     }
     
     public static void main(String[] args) throws NamingException, Exception {
-        //TestRemote test = getTestRemote();
-       // CivilHandler cv = test.sendCivil("000000000003");
-        Civil civil = new Civil();
-        civil.getCivilsAccount("000000000002");
-        System.out.println(civil);
-        //for (Territoire territoire : cv.getTerritoires()) {
-         //   System.err.println(territoire.getAddresse());
-        //}   
+        TestRemote t = BanqueService.getTestRemote();
+        Vector<Territoire> territoires = (Vector<Territoire>) t.getTerritoires("000000000002");
+        
+        for (Territoire territoire : territoires) {
+            System.out.println(territoire.getAddresse());
+        }
+        // Civil civil = new Civil();
+        //civil.getCivilsAccount("000000000002");
+        //System.out.println(civil);   
     }
-    
+    /*
     @WebMethod(operationName = "consulationSolde")
     public Civil consultationSolde(String cin) throws Exception{
         Civil civil = new Civil();
@@ -63,5 +62,5 @@ public class BanqueService {
     @WebMethod(operationName = "")
     public String getBanque(){
         return "ok";
-    }
+    }*/
 }

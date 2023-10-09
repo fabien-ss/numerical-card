@@ -8,8 +8,8 @@ import java.util.Properties;
 import java.util.Vector;
 import javax.naming.Context;
 import javax.naming.InitialContext;
-import service.Territoire;
-import stat.TestRemote;
+import model.Territoire;
+import service.TestRemote;
 
 /**
  *
@@ -35,9 +35,7 @@ public class FoncierTest {
             TestRemote greeting = (TestRemote) context.lookup("java:global/Foncier/Test!stat.TestRemote");
             
             Vector<Territoire> t = greeting.getTerritoires("000000000003");
-            for (Territoire territoire1 : t) {
-                System.out.println(territoire.getAddresse());
-            }
+            
             context.close();
             
         } catch(Exception e) {

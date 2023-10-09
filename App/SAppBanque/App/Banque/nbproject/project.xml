@@ -9,6 +9,7 @@
             <explicit-platform explicit-source-supported="true"/>
             <included-library dirs="200">file.reference.jakarta.jws-api-3.0.0.jar</included-library>
             <included-library dirs="100">reference.Foncier.dist</included-library>
+            <included-library dirs="200">file.reference.postgresql-42.5.0.jar</included-library>
             <source-roots>
                 <root id="src.dir"/>
             </source-roots>

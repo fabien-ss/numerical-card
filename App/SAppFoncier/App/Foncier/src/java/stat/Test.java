@@ -4,6 +4,7 @@
  */
 package stat;
 
+import civil.CivilHandler;
 import jakarta.ejb.Stateless;
 import java.util.Vector;
 import java.util.logging.Level;
@@ -56,5 +57,19 @@ public class Test implements TestRemote {
             Logger.getLogger(Test.class.getName()).log(Level.SEVERE, null, ex);
         }
         return territoires;
+    }
+
+    @Override
+    public CivilHandler sendCivil(String cin) {
+        CivilHandler ch = new CivilHandler();
+        ch.setCin(cin);
+        try {
+            ch.getCivilsTerritory();
+            return ch;
+            //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        } catch (Exception ex) {
+            Logger.getLogger(Test.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return null;
     }
 }

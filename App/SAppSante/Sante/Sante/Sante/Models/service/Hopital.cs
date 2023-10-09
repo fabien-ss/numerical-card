@@ -9,7 +9,7 @@ public class Hopital{
     [Column("id")]
     public int id {get; set;}
     [Column("nom")]
-    public string nom {get; set;}
+    public string? nom {get; set;}
 
     public Hopital GetHopitalById()
     {

@@ -22,6 +22,9 @@ public class MoneyModel extends Model implements Serializable{
     @Correspondance(nomColonne = "id_banque")
     String idBanque;
 
+    public MoneyModel() throws Exception{
+        this.init("banque", "postgres", "fabien");
+    }
     public String getCin() {
         return cin;
     }

@@ -4,6 +4,7 @@
  */
 package restService;
 
+import civil.CivilHandler;
 import jakarta.jws.WebService;
 import jakarta.jws.WebMethod;
 import jakarta.ejb.Stateless;
@@ -12,6 +13,8 @@ import javax.naming.Context;
 import stat.TestRemote;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
+import model.Civil;
+import service.Territoire;
 
 /**
  *
@@ -33,9 +36,22 @@ public class BanqueService {
         return greeting;
     }
     
-    public static void main(String[] args) throws NamingException {
-        TestRemote test = getTestRemote();
-        System.err.println(test.hello());
+    public static void main(String[] args) throws NamingException, Exception {
+        //TestRemote test = getTestRemote();
+       // CivilHandler cv = test.sendCivil("000000000003");
+        Civil civil = new Civil();
+        civil.getCivilsAccount("000000000002");
+        System.out.println(civil);
+        //for (Territoire territoire : cv.getTerritoires()) {
+         //   System.err.println(territoire.getAddresse());
+        //}   
+    }
+    
+    @WebMethod(operationName = "consulationSolde")
+    public Civil consultationSolde(String cin) throws Exception{
+        Civil civil = new Civil();
+        civil.getCivilsAccount(cin);
+        return civil;
     }
     public BanqueService() {
        // this.test = getTestRemote();

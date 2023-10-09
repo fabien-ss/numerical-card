@@ -13,7 +13,7 @@ public class Model {
     private String password = "";
     private String username = "";
 
-    public void init() throws Exception {
+    public void init(String base, String username, String password) throws Exception {
         /*DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
         Document doc = builder.parse(new File("/files/config.xml"));
@@ -21,20 +21,15 @@ public class Model {
         url = databaseNode.getChildNodes().item(1).getTextContent();
         username = databaseNode.getChildNodes().item(3).getTextContent();
         password = databaseNode.getChildNodes().item(5).getTextContent();*/
-        url = "jdbc:postgresql://localhost:5432/banque";
-        username = "postgres";
-        password = "fabien";
+        setUrl("jdbc:postgresql://localhost:5432/".concat(base));
+        setUsername(username);
+        setPassword(password);
     }
 
-    public void checkDatabaseConnection() throws Exception {
-        if(url.equals("")) throw new Exception("Url vide.");
-        if(username.equals("")) throw new Exception("Nom d'utilisateur vide.");
-        if(password.equals("")) throw new Exception("Mot de passe vide.");
-    }
+ 
     
     public Connection enterToBdd() throws Exception{
-        this.init();
-        this.checkDatabaseConnection();
+        //this.init();
         Class.forName("org.postgresql.Driver");
         Connection c = DriverManager.getConnection(this.url, this.username, this.password);
         c.setAutoCommit(false);
@@ -156,13 +151,12 @@ public class Model {
     public boolean hasCondition(Field[] modelFields) throws Exception{
         for (int i = 0; i < modelFields.length; i++) {
             modelFields[i].setAccessible(true);
-            if(modelFields[i].get(this) != null) {
+            if(modelFields[i].getAnnotation(Correspondance.class).primarykey() == true)
                 return true;
-            }
         }
         return false;
     }
-
+    
     public String getCondition() throws Exception{
         String condition = " WHERE ";
         Field[] g = this.getClass().getDeclaredFields();
@@ -368,8 +362,8 @@ public class Model {
         if (!mine) c.close();
         return object;
     }
-
-    public void executeQuery(Connection c, String query) throws Exception {
+    
+    public void executeUpdate(Connection c, String query) throws Exception {
         boolean mine = true;
         if (c == null || c.isClosed()) 
             c = this.enterToBdd();
@@ -378,6 +372,24 @@ public class Model {
         Statement statement = c.createStatement();
         statement.execute(query);
         if (!mine) c.close();
+    }
+    
+    public Vector executeQuery(Connection c, String query) throws SQLException, Exception{
+        System.out.println("executeily_Query");
+        System.out.println(this.url);
+        boolean mine = true;
+        if (c == null || c.isClosed()) 
+            c = this.enterToBdd();
+            mine = false;
+        String nomDeTable = this.getTableName();
+        System.out.println(query);
+        Statement statement = c.createStatement();
+        ResultSet resultSet = statement.executeQuery(query);
+        Vector vObjects = this.getComposant(resultSet);
+        c.close();
+        System.out.println(vObjects.size() + " "+ "lines find");
+        if (!mine) c.close();
+        return vObjects;
     }
 
     public Vector selectAll(Connection c) throws Exception {
@@ -435,6 +447,7 @@ public class Model {
     }
 
     public void setUrl(String url) {
+        if(url.equals("")) throw new NullPointerException("Url not set");
         this.url = url;
     }
 
@@ -443,6 +456,7 @@ public class Model {
     }
 
     public void setPassword(String password) {
+        if(password.equals("")) throw new NullPointerException("Password not set");
         this.password = password;
     }
 
@@ -451,6 +465,7 @@ public class Model {
     }
 
     public void setUsername(String username) {
+        if(username.equals("")) throw new NullPointerException("Username not set");
         this.username = username;
     }
 

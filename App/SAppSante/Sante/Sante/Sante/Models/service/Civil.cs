@@ -11,67 +11,67 @@ public class Civil
 {
     [Key]
     [Column("cin")]
-    public string cin { get; set; }
+    public string? cin { get; set; }
     [Column("nom")]
-    public string nom { get; set; }
+    public string? nom { get; set; }
     [Column("first_name")]
-    public string firstName { get; set; }
+    public string? firstName { get; set; }
     [Column("date_of_birth")]
-    public DateTime dateOfBirth { get; set; }
+    public DateTime? dateOfBirth { get; set; }
     [Column("place_of_birth")]
-    public string birthPlace { get; set; }
+    public string? birthPlace { get; set; }
     [Column("address_local")]
-    public string addresse { get; set; }
+    public string? addresse { get; set; }
     [Column("father")]
     public string? fatherid { get; set; }
     [Column("mother")]
     public string? motherid { get; set; }
     [NotMapped]
-    public Civil father { get; set; }
+    public Civil? father { get; set; }
     [NotMapped]
-    public Civil mother { get; set; }
+    public Civil? mother { get; set; }
     
     [Column("date_delivery")]
-    public DateTime deliveryDate { get; set; }
+    public DateTime? deliveryDate { get; set; }
     [NotMapped]
-    public List<PersonDesease> deseases { get; set; }
+    public List<PersonDesease>? deseases { get; set; }
     
     public void GetCivilByCin()
     {
         using (var context = ApplicationDbContextFactory.Create())
         {
             var civil = context.civil
-                .FirstOrDefault(c => c.cin == this.cin);
+                .FirstOrDefault(c => c.cin == cin);
 
             if (civil != null)
             {
-                this.nom = civil.nom;
-                this.firstName = civil.firstName;
-                this.dateOfBirth = civil.dateOfBirth;
-                this.birthPlace = civil.birthPlace;
-                this.addresse = civil.addresse;
-                this.deliveryDate = civil.deliveryDate;
+                nom = civil.nom;
+                firstName = civil.firstName;
+                dateOfBirth = civil.dateOfBirth;
+                birthPlace = civil.birthPlace;
+                addresse = civil.addresse;
+                deliveryDate = civil.deliveryDate;
                 
                 if (civil.fatherid != null)
                 {
-                    this.father = new Civil
+                    father = new Civil
                     {
                         cin = civil.fatherid
                     };
-                    this.father.GetCivilByCin(); // Assuming this is a method in the Civil class
+                    father.GetCivilByCin(); // Assuming this is a method in the Civil class
                 }
 
                 if (civil.motherid != null)
                 {
-                    this.mother = new Civil
+                    mother = new Civil
                     {
                         cin = civil.motherid
                     };
-                    this.mother.GetCivilByCin(); // Assuming this is a method in the Civil class
+                    mother.GetCivilByCin(); // Assuming this is a method in the Civil class
                 }
 
-                var pd = new PersonDesease { cin = this.cin };
-                this.deseases = pd.GetAllDeseasePerCivil();
+                var pd = new PersonDesease { cin = cin };
+                deseases = pd.GetAllDeseasePerCivil();
             }
             else
             {

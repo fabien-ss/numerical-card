@@ -11,7 +11,7 @@ public class Disease{
     [Column("id")]
     public int id { get; set; }
     [Column("nom")]
-    public string nom { get; set; }
+    public string? nom { get; set; }
 
     public Disease GetDiseaseById()
     {

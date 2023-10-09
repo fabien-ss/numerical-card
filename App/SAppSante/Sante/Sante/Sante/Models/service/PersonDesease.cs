@@ -3,21 +3,20 @@ using Sante.Models.bdd;
 
 namespace Sante.Models.service;
 
-[Table(("person_desease"))]
+[Table("person_desease")]
 public class PersonDesease{
     [NotMapped]
-    public Civil civil { get; set; }
-    
+    public Civil? civil { get; set; }
     [Column("cin")]
-    public String cin { get; set; }
+    public string? cin { get; set; }
     [NotMapped]
-    public Disease disease { get; set; }
+    public Disease? disease { get; set; }
     [Column("date_start")]
-    public DateTime startDate { get; set; }
+    public DateTime? startDate { get; set; }
     [Column("date_end")]
-    public DateTime endDate { get; set; }
+    public DateTime? endDate { get; set; }
     [NotMapped]
-    public Hopital hopital { get; set; }
+    public Hopital? hopital { get; set; }
     [Column("id_desease")]
     public int idDesease { get; set; }
     [Column("idhopital")]

@@ -12,12 +12,12 @@ import java.io.Serializable;
  *
  * @author PRO112
  */
-@Correspondance(nomTable = "Territory")
-public class Territoire extends Model implements Serializable{
+@Correspondance(nomTable = "Territory") // anaran le table
+public class Territoire extends Model implements Serializable {
     
-    @Correspondance(nomColonne = "cin", foreignkey = true)
-    String cin;
-    @Correspondance
+    @Correspondance(nomColonne = "cin" /* ito zao tsy mitovy anaran 'le colonne sy attribut de natao cin*/, foreignkey = true /* atao true foreignkey raha foreignkey de raha primarykey de otrazany ihany*/) // asina correspondance izy vao kobony hoe colonne ana table, sinon tsy colonne
+    String cin; 
+    @Correspondance // reto mitovy daholo
     String longitude;
     @Correspondance
     String latitude;
@@ -32,11 +32,15 @@ public class Territoire extends Model implements Serializable{
     @Correspondance
     String titre;
 
-    public Territoire(){
-        
+    public Territoire() throws Exception{
+        this.init("foncier", "postgres", "fabien");
     }
     
-    public Territoire(String cin, String longitude, String latitude, String addresse, int longeur, int largeur, String description, String titre) {
+    public Territoire(String cin, String longitude, String latitude, String addresse, int longeur, int largeur, String description, String titre) throws Exception {
+        this.init("foncier", "postgres",  "fabien");
+        
+        // raha mampiasa sequence manoka de afaka manamboatra id atao am setPrefixe(String) ny prefixe ex: PRS de atao ao am nom fonction le anaran'le sequence
+        // de eo amle setColonnePrimaryKey elah manao hoe setId(this.construirePk(null)) // eto zao id no id an'le izy fa eto cin 
         this.setCin(cin);
         this.setLongitude(longitude);
         this.setLatitude(latitude);

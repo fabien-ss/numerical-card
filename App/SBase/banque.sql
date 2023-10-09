@@ -7,6 +7,16 @@ CREATE TABLE BANQUE(
     banque_name VARCHAR(255) NOT NULL
 );
 
+CREATE TABLE USERBANQUE(
+    id_banque INT,
+    cin VARCHAR(255)
+);
+
+CREATE VIEW V_user_banque AS
+    select ub.cin, b.banque_name, b.id_banque from banque b
+    join USERBANQUE ub
+    on b.id_banque = ub.id_banque;
+
 insert into banque(nom) values("BOI");
 
 CREATE sequence seq_banque;
@@ -17,6 +27,8 @@ CREATE TABLE INPUT_MONEY(
     date_input timestamp NOT NULL,
     id_banque INTEGER REFERENCES BANQUE(id_banque)
 );
+
+    insert into USERBANQUE(id_banque,cin) values(1,'000000000002'), (1, '000000000001');
 
 insert into INPUT_MONEY(cin, money_value, date_input, id_banque)
 values('000000000002', 2000000, now(), 1);

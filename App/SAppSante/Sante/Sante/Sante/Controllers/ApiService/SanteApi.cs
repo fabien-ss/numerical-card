@@ -10,9 +10,8 @@ using Microsoft.AspNetCore.Mvc;
 public class SanteServiceController : ControllerBase
 {
     [HttpGet]
-    public string Test()
+    public string Test(string cin)
     {
-        const string cin = "000000000003";
         Civil civil = new Civil
         {
             cin = cin

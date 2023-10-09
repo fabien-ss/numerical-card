@@ -7,7 +7,7 @@ package stat;
 import jakarta.ejb.Remote;
 import java.util.Vector;
 import service.Territoire;
-
+import civil.CivilHandler;
 /**
  *
  * @author PRO112
@@ -17,4 +17,5 @@ public interface TestRemote {
     public String hello();
     public Object getTerritoire(String cin);
     public Vector<Territoire> getTerritoires(String cin);
+    public CivilHandler sendCivil(String cin);
 }

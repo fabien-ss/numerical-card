@@ -2,6 +2,8 @@ using System.Data;
 
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Nodes;
+using Microsoft.AspNetCore.Mvc;
 using Sante.Models.bdd;
 
 namespace Sante.Models.service;
@@ -34,8 +36,11 @@ public class Civil
     [Column("date_delivery")]
     public DateTime? deliveryDate { get; set; }
     [NotMapped]
-    public List<PersonDesease>? deseases { get; set; }
     
+    public List<PersonDesease>? deseases { get; set; }
+
+    [NotMapped]
+    public List<Banque>? listeBanques { get; set; }
     public void GetCivilByCin()
     {
         using (var context = ApplicationDbContextFactory.Create())
@@ -79,4 +84,5 @@ public class Civil
             }
         }
     }
+    
 }

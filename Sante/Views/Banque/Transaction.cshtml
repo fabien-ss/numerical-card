@@ -1,0 +1,33 @@
+@using Sante.Models.service
+@{
+    List<Devise> devises = (List<Devise>)ViewData["devises"];
+    string reponse = (string)ViewData["message"];
+}
+<h3>
+    @reponse
+</h3>
+<h1>Transaction</h1>
+<form asp-controller="Banque" asp-action="DoTransaction">
+    cin1 à debiter: <input type="text" class="btn" name="cin1" value="000000000001">
+    <br/>
+    cin2 à crediter: <input type="text" class="btn" name="cin2" value="000000000002">
+    <br/>
+    devise 
+    <select name="idDevise" class="btn">
+        @foreach (var d in devises)
+        {
+            <option value="@d.id_devise">@d.nom @d.symbole</option>
+        }
+    </select>
+    <br/>
+    Banque 
+    <select name="idBanque" class="btn">
+        <option value="2">BOI</option>
+        <option value="3">AVC</option>
+    </select>
+    <br/>
+    Montant
+    <input type="number" name="montant" class="btn" value="5000">
+    <br/>
+    <input type="submit">
+</form>

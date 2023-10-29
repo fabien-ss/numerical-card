@@ -1,0 +1,189 @@
+@using Sante.Models.service
+@{
+  Civil civil = (Civil)ViewData["civil"];
+}
+<link rel="stylesheet" href="~/css/Carte.css" asp-append-version="true"/>
+<div class="container mt-5">
+  <div class="row" style="">
+    <form  asp-action="Carte">
+      <input type="text" name="cin" class="btn" style="width: 85%; border-radius: 0; text-align: left; border: 1px #4343d3;" value="00000000000X" [(ngModel)]="cin" required>
+      <input type="submit" class="btn btn-primary" style="width: 10%; border-radius: 0;" width="30%">
+    </form>
+  </div>  
+  <div class="row mt-3" id = "s">
+      <div class="col-5">
+        <p><strong>Cin: </strong>@civil.cin</p>
+        <p><strong>Nom: </strong>@civil.nom</p>
+        <p><strong>Prénom: @civil.firstName</strong></p>
+        <p><strong>Date de naissance: @civil.dateOfBirth</strong></p>
+        <p><strong>Lieu de naissance: @civil.birthPlace</strong></p>
+      </div>
+      <div class="col-5">
+        <p><strong>Adresse: @civil.addresse</strong></p>
+        <p><strong>Père:
+          @if (civil.father != null)
+          {
+            @civil.father.nom
+          }
+        </strong></p>
+        <p><strong>Mère:
+          @if (civil.mother != null)
+          {
+            @civil.mother.nom
+          }
+        </strong></p>
+        <p><strong>Date délivraison: @civil.deliveryDate</strong></p>
+      </div>  
+   
+  </div>
+  <button onclick="showNextBox()" class="btn btn-info">Suivant</button>
+  <div class="row box" id="box1">
+    <h1>Banque</h1>
+    @{
+      foreach (var banque in @civil.listeBanques)
+      { 
+        <h2><strong>@banque.nom</strong></h2>
+        <h2><strong>Solde: 
+          @if (banque.Solde != null)
+          {
+            @banque.Solde.total
+          }
+          </strong></h2>
+        <h3><strong>Transaction</strong></h3>
+        <div class="col-6">
+          <div>
+            <table class="table table-striped">
+              <thead>
+              <tr>
+                <th scope="col" class="sort" data-sort="id">#</th>
+                <th scope="col" class="sort" data-sort="firstname">Date</th>
+                <th scope="col" class="sort" data-sort="lastname">Type</th>
+                <th scope="col" class="sort" data-sort="username">Montant</th>
+              </tr>
+              </thead>
+              <tbody class="list">
+              @foreach (var debit in @banque.debits)
+              {
+                <tr>
+                  <th scope="row" class="id" style="color: #0f5132">Actif</th>
+                  <td class="firstname">@debit.date</td>
+                  <td class="lastname">Debit</td>
+                  <td class="username">@debit.money Ar</td>
+                </tr> 
+              }
+              
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+        <div class="col-6">
+          <div >
+            <table class="table table-striped">
+              <thead>
+              <tr>
+                <th scope="col" class="sort" data-sort="id">#</th>
+                <th scope="col" class="sort" data-sort="firstname">Date</th>
+                <th scope="col" class="sort" data-sort="lastname">Type</th>
+                <th scope="col" class="sort" data-sort="username">Montant</th>
+              </tr>
+              </thead>
+              <tbody class="list">
+              @foreach (var credit in @banque.credits)
+              {
+                <tr>
+                  <th scope="row" class="id" style="color: #0f5132">Actif</th>
+                  <td class="firstname">@credit.date</td>
+                  <td class="lastname">Credit</td>
+                  <td class="username">@credit.money Ar</td>
+                </tr> 
+              }
+              </tbody>
+            </table>
+          </div>
+        </div>
+      }
+    }
+    
+  </div>
+  
+  <div class="row box" id = "box2">
+    <h1>Sante</h1>
+    <div class="col-12">
+      <div style="margin: auto;">
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th scope="col" class="sort" data-sort="id">#</th>
+            <th scope="col" class="sort" data-sort="firstname">Maladie</th>
+            <th scope="col" class="sort" data-sort="lastname">Date début</th>
+            <th scope="col" class="sort" data-sort="username">Date fin</th>
+            <th scope="col" class="sort" data-sort="username">Centre de santé</th>
+          </tr>
+          </thead>
+          <tbody class="list">
+          @foreach (var sante in civil.deseases)
+          {
+            <tr>
+              <th scope="row" class="id">1</th>
+              <td class="firstname">@sante.disease</td>
+              <td class="lastname">@sante.startDate</td>
+              <td class="username">@sante.endDate</td>
+              <td class="username">@sante.hopital.nom</td>
+            </tr>
+          }
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-6"></div>
+  </div>
+   
+  <div class="row box" id="box3">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <div class="col-12">
+      <h1>Foncier</h1> 
+      <div style="margin: auto;" class="row">
+
+       @foreach (var terre in civil.listeTerritories)
+       {
+         <div class="col-4 card mt-3 border-0" style="padding: 2%; margin: auto;">
+           <div class="card-header">
+             <h2>Madagascar</h2>
+           </div>
+           
+           <div class="card-body">
+             <div class="card-text">
+               <p scope="row" class="id">@terre.idTerritoire</p>
+               <p width="16%" class="username">Locapsation: @terre.adresse</p>
+               <p width="16%" class="username">Description: @terre.description</p>
+               <p width="16%" class="username">Titre: @terre.titre</p>
+               <p>Superficie km^2: @terre.surface</p> 
+               <p>Perimetre m: @terre.perimetre</p> 
+             </div>
+           </div>
+           
+           <div class="card-footer">
+             <button style="float: right;" id="show-map-button-@terre.idTerritoire" onclick="PopupCentrer('@terre.idTerritoire')" class="btn btn-primary">Voir sur la carte</button>
+           </div>
+          </div>
+       }
+       <div class="col-4 card mt-3 border-0" style="padding: 2%; margin: auto;" >
+         
+          <a asp-controller="Territory" width="100%" height="400px" asp-action="NouveauTerrain" class="btn btn-primary">Ajouter terrain</a>
+        
+        </div>
+
+      </div>
+    </div>
+    <div class="col-6"></div>
+  </div>
+</div>
+<script>
+
+</script>
+<script src = "js/ShowBox.js">
+</script>
+<script src="js/Map.js">
+</script>

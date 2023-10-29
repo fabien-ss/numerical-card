@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\SAppSante\\Sante\\Sante.csproj": {}
+    "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\numerical-card\\App\\SAppSante\\Sante\\Sante\\Sante\\Sante.csproj": {}
   },
   "projects": {
-    "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\SAppSante\\Sante\\Sante.csproj": {
+    "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\numerical-card\\App\\SAppSante\\Sante\\Sante\\Sante\\Sante.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\SAppSante\\Sante\\Sante.csproj",
+        "projectUniqueName": "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\numerical-card\\App\\SAppSante\\Sante\\Sante\\Sante\\Sante.csproj",
         "projectName": "Sante",
-        "projectPath": "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\SAppSante\\Sante\\Sante.csproj",
+        "projectPath": "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\numerical-card\\App\\SAppSante\\Sante\\Sante\\Sante\\Sante.csproj",
         "packagesPath": "C:\\Users\\PROACTIF\\.nuget\\packages\\",
-        "outputPath": "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\SAppSante\\Sante\\obj\\",
+        "outputPath": "E:\\ITUNIVERSITY\\S5\\ArchitectureLogiciel\\project\\card\\numerical-card\\App\\SAppSante\\Sante\\Sante\\Sante\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PROACTIF\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,21 +38,29 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "JSON": {
+            "Microsoft.AspNet.WebApi.Cors": {
               "target": "Package",
-              "version": "[1.0.1, )"
+              "version": "[5.2.9, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
             },
-            "Npgsql": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[7.0.6, )"
+              "version": "[7.0.11, )"
             },
-            "System.Data.SqlClient": {
+            "System.Net.Http": {
               "target": "Package",
-              "version": "[4.8.5, )"
+              "version": "[4.3.4, )"
             },
             "System.ServiceModel.Duplex": {
               "target": "Package",
@@ -69,6 +77,10 @@
             "System.ServiceModel.Security": {
               "target": "Package",
               "version": "[4.8.*, )"
+            },
+            "npgsql": {
+              "target": "Package",
+              "version": "[7.0.6, )"
             }
           },
           "imports": [

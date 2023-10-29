@@ -9,9 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Sante
 build_property.RootNamespace = Sante
-build_property.ProjectDir = E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\
+build_property.ProjectDir = E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\Sante\Sante\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante
+build_property.MSBuildProjectDirectory = E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\Sante\Sante
 build_property._RazorSourceGeneratorDebug = 
+
+[E:/ITUNIVERSITY/S5/ArchitectureLogiciel/project/card/numerical-card/App/SAppSante/Sante/Sante/Sante/Views/Banque/DoTransaction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFucXVlXERvVHJhbnNhY3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITUNIVERSITY/S5/ArchitectureLogiciel/project/card/numerical-card/App/SAppSante/Sante/Sante/Sante/Views/Banque/Transaction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFucXVlXFRyYW5zYWN0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITUNIVERSITY/S5/ArchitectureLogiciel/project/card/numerical-card/App/SAppSante/Sante/Sante/Sante/Views/Home/Carte.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJ0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITUNIVERSITY/S5/ArchitectureLogiciel/project/card/numerical-card/App/SAppSante/Sante/Sante/Sante/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITUNIVERSITY/S5/ArchitectureLogiciel/project/card/numerical-card/App/SAppSante/Sante/Sante/Sante/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITUNIVERSITY/S5/ArchitectureLogiciel/project/card/numerical-card/App/SAppSante/Sante/Sante/Sante/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITUNIVERSITY/S5/ArchitectureLogiciel/project/card/numerical-card/App/SAppSante/Sante/Sante/Sante/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITUNIVERSITY/S5/ArchitectureLogiciel/project/card/numerical-card/App/SAppSante/Sante/Sante/Sante/Views/Territory/NouveauTerrain.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVycml0b3J5XE5vdXZlYXVUZXJyYWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITUNIVERSITY/S5/ArchitectureLogiciel/project/card/numerical-card/App/SAppSante/Sante/Sante/Sante/Views/Territory/Visualisation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVycml0b3J5XFZpc3VhbGlzYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITUNIVERSITY/S5/ArchitectureLogiciel/project/card/numerical-card/App/SAppSante/Sante/Sante/Sante/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITUNIVERSITY/S5/ArchitectureLogiciel/project/card/numerical-card/App/SAppSante/Sante/Sante/Sante/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITUNIVERSITY/S5/ArchitectureLogiciel/project/card/numerical-card/App/SAppSante/Sante/Sante/Sante/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-iht0ktbu6f

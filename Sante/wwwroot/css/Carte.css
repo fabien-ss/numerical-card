@@ -1,0 +1,17 @@
+.box {
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+
+.box:first-child {
+    display: flex;
+}
+
+.show {
+    display: flex;
+    opacity: 1;
+}
+
+.terrain:hover{
+    box-shadow: 1px 1px 1px 1px #0a58ca;
+}

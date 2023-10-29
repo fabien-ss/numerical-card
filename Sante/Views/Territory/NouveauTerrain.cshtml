@@ -1,0 +1,95 @@
+@{
+    string cin = (string)ViewData["cin"];
+}
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+<form asp-controller="Territory" asp-action="NouveauTerrain" method="post" class="form-control border-0">
+    <div class="container border-0">
+         @Html.ValidationSummary()
+        <h1>Nouveau terrain</h1>
+            <div id="map" style="width: 100%; height: 700px;"></div>
+       
+        <div class="row border-0">
+            <div class="col-6 border-0">
+                <input type="hidden" value="@cin">
+                <div class="form-control border-0">
+                    <label>Adresse</label>
+                    <input type="text" class="form-control" name="adresse"/>
+                </div>
+                <div class="form-control border-0">
+                    <label>Description</label>
+                    <input type="text" class="form-control" name="description"/>
+                </div>
+                <div class="form-control border-0">
+                    <label>Longueur</label>
+                    <input type="number" value="10" class="form-control" name="longueur"/>
+                </div>
+                <div class="form-control border-0">
+                    <label>Largeur</label>
+                    <input type="number" value="10" class="form-control" name="largeur"/>
+                </div>
+                <div class="form-control border-0">
+                    <label>Titre</label>
+                    <input type="text" class="form-control" name="titre"/>
+                </div>
+                <input type="submit" value="Valider" class="btn btn-primary mt-3"/>
+            </div>
+            <div class="col-6 border-0" style="display: inline;">
+                <h4>
+                    Entrez les coordonnees de votre terrain (longitude latitude)
+                    <button class="btn btn-primary mt-2" type="button" onclick="ajouterChamps()">Ajouter champs</button>
+                </h4>
+                <div class="row" id="DivAjoutCoordonnees">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<script>
+    var map = L.map('map').setView([-18.971937468027644, 47.54332460823346], 100);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+    }).addTo(map);
+    
+    var pointsArray = [];
+    map.on('click', function(e) {
+        var coordinates = e.latlng; // e.latlng contains the clicked coordinates
+        console.log("You clicked the map at latitude: " + coordinates.lat + ", longitude: " + coordinates.lng);
+        var c = coordinates.lng + " " + coordinates.lat;
+         
+        ajouterCoordonnee(c);
+        var marker = L.marker(coordinates).addTo(map);
+        pointsArray.push(coordinates);
+    
+        if (pointsArray.length >= 2) {
+            var polyline = L.polyline(pointsArray).addTo(map);
+        }
+    });
+
+</script>
+<script>
+    const container = document.getElementById("DivAjoutCoordonnees");
+    function ajouterChamps(){
+       const modele = document.createElement("div");
+       modele.setAttribute("class", "border-0 col-6 mt-3");
+       const inputmodele = document.createElement("input");
+       inputmodele.setAttribute("name", "coordonnees[]");
+       inputmodele.setAttribute("class", "form-control");
+       modele.appendChild(inputmodele);
+       container.appendChild(modele);
+    }
+    
+    function ajouterCoordonnee(coordinate){
+       const modele = document.createElement("div");
+       modele.setAttribute("class", "border-0 col-6 mt-3");   
+       const inputmodele = document.createElement("input");
+       inputmodele.setAttribute("name", "coordonnees[]");
+       inputmodele.setAttribute("class", "form-control");
+       inputmodele.setAttribute("value", coordinate);
+       modele.appendChild(inputmodele);
+       container.appendChild(modele);
+    }
+</script>

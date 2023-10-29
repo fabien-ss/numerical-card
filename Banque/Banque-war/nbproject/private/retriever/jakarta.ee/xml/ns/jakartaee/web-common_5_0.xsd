@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="https://jakarta.ee/xml/ns/jakartaee"
+            xmlns:jakartaee="https://jakarta.ee/xml/ns/jakartaee"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified"
+            version="5.0">
+  <xsd:annotation>
+    <xsd:documentation>
+
+      Copyright (c) 2009, 2020 Oracle and/or its affiliates. All rights reserved.
+      
+      This program and the accompanying materials are made available under the
+      terms of the Eclipse Public License v. 2.0, which is available at
+      http://www.eclipse.org/legal/epl-2.0.
+      
+      This Source Code may also be made available under the following Secondary
+      Licenses when the conditions for such availability set forth in the
+      Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+      version 2 with the GNU Classpath Exception, which is available at
+      https://www.gnu.org/software/classpath/license.html.
+      
+      SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+      
+    </xsd:documentation>
+  </xsd:annotation>
+
+  <xsd:annotation>
+    <xsd:documentation>
+      <![CDATA[
+      This is the common XML Schema for the Servlet 5.0 deployment descriptor.
+      This file is in turn used by web.xml and web-fragment.xml
+      web application's war file.  All Servlet deployment descriptors
+      must indicate the web common schema by using the Jakarta EE
+      namespace:
+      
+      https://jakarta.ee/xml/ns/jakartaee
+      
+      and by indicating the version of the schema by
+      using the version element as shown below:
+      
+      <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="..."
+      version="5.0">
+      ...
+      </web-app>
+      
+      The instance documents may indicate the published version of
+      the schema using the xsi:schemaLocation attribute for Jakarta EE
+      namespace with the following location:
+      
+      https://jakarta.ee/xml/ns/jakartaee/web-common_5_0.xsd
+      
+      ]]>
+    </xsd:documentation>
+  </xsd:annotation>
+
+  <xsd:annotation>
+    <xsd:documentation>
+
+      The following conventions apply to all Jakarta EE
+      deployment descriptor elements unless indicated otherwise.
+      
+      - In elements that specify a pathname to a file within the
+      same JAR file, relative filenames (i.e., those not
+      starting with "/") are considered relative to the root of
+      the JAR file's namespace.  Absolute filenames (i.e., those
+      starting with "/") also specify names in the root of the
+      JAR file's namespace.  In general, relative names are
+      preferred.  The exception is .war files where absolute
+      names are preferred for consistency with the Servlet API.
+      
+    </xsd:documentation>
+  </xsd:annotation>
+
+  <xsd:include schemaLocation="jakartaee_9.xsd"/>
+
+  <xsd:include schemaLocation="jsp_3_0.xsd"/>
+
+  <xsd:group name="web-commonType">
+    <xsd:choice>
+      <xsd:group ref="jakartaee:descriptionGroup"/>
+      <xsd:element name="distributable"
+                   type="jakartaee:emptyType"/>
+      <xsd:element name="context-param"
+                   type="jakartaee:param-valueType">
+        <xsd:annotation>
+          <xsd:documentation>
+
+            The context-param element contains the declaration
+            of a web application's servlet context
+            initialization parameters.
+            
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="filter"
+                   type="jakartaee:filterType"/>
+      <xsd:element name="filter-mapping"
+                   type="jakartaee:filter-mappingType"/>
+      <xsd:element name="listener"
+                   type="jakartaee:listenerType"/>
+      <xsd:element name="servlet"
+                   type="jakartaee:servletType"/>
+      <xsd:element name="servlet-mapping"
+                   type="jakartaee:servlet-mappingType"/>
+      <xsd:element name="session-config"
+                   type="jakartaee:session-configType"/>
+      <xsd:element name="mime-mapping"
+                   type="jakartaee:mime-mappingType"/>
+      <xsd:element name="welcome-file-list"
+                   type="jakartaee:welcome-file-listType"/>
+      <xsd:element name="error-page"
+                   type="jakartaee:error-pageType"/>
+      <xsd:element name="jsp-config"
+                   type="jakartaee:jsp-configType"/>
+      <xsd:element name="security-constraint"
+                   type="jakartaee:security-constraintType"/>
+      <xsd:element name="login-config"
+                   type="jakartaee:login-configType"/>
+      <xsd:element name="security-role"
+                   type="jakartaee:security-roleType"/>
+      <xsd:group ref="jakartaee:jndiEnvironmentRefsGroup"/>
+      <xsd:element name="message-destination"
+                   type="jakartaee:message-destinationType"/>
+      <xsd:element name="locale-encoding-mapping-list"
+                   type="jakartaee:locale-encoding-mapping-listType"/>
+    </xsd:choice>
+  </xsd:group>
+
+  <xsd:attributeGroup name="web-common-attributes">
+    <xsd:attribute name="version"
+                   type="jakartaee:web-app-versionType"
+                   use="required"/>
+    <xsd:attribute name="id"
+                   type="xsd:ID"/>
+    <xsd:attribute name="metadata-complete"
+                   type="xsd:boolean">
+      <xsd:annotation>
+        <xsd:documentation>
+
+          The metadata-complete attribute defines whether this
+          deployment descriptor and other related deployment
+          descriptors for this module (e.g., web service
+          descriptors) are complete, or whether the class
+          files available to this module and packaged with
+          this application should be examined for annotations
+          that specify deployment information.
+          
+          If metadata-complete is set to "true", the deployment
+          tool must ignore any annotations that specify deployment
+          information, which might be present in the class files
+          of the application.
+          
+          If metadata-complete is not specified or is set to
+          "false", the deployment tool must examine the class
+          files of the application for annotations, as
+          specified by the specifications.
+          
+        </xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+  </xsd:attributeGroup>
+
+
+<!-- **************************************************** -->
+
+  <xsd:complexType name="auth-constraintType">
+    <xsd:annotation>
+      <xsd:documentation>
+
+        The auth-constraintType indicates the user roles that
+        should be permitted access to this resource
+        collection. The role-name used here must either correspond
+        to the role-name of one of the security-role elements
+        defined for this web application, or be the specially
+        reserved role-name "*" that is a compact syntax for
+        indicating all roles in the web application. If both "*"
+        and rolenames appear, the container interprets this as all
+        roles.  If no roles are defined, no user is allowed access
+        to the portion of the web application described by the
+        containing security-constraint.  The container matches
+        role names case sensitively when determining access.
+        
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="de

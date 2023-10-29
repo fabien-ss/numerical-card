@@ -1,0 +1,202 @@
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\Sante.csproj.AssemblyReference.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\Sante.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\Sante.AssemblyInfoInputs.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\Sante.AssemblyInfo.cs
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\Sante.csproj.CoreCompileInputs.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\Sante.MvcApplicationPartsAssemblyInfo.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\Sante.RazorAssemblyInfo.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\Sante.RazorAssemblyInfo.cs
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\bin\Debug\net7.0\appsettings.Development.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\bin\Debug\net7.0\appsettings.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\bin\Debug\net7.0\Sante.staticwebassets.runtime.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\bin\Debug\net7.0\Sante.exe
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\bin\Debug\net7.0\Sante.deps.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\bin\Debug\net7.0\Sante.runtimeconfig.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\bin\Debug\net7.0\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\bin\Debug\net7.0\Sante.pdb
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\bin\Debug\net7.0\System.Data.SqlClient.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\staticwebassets\msbuild.Sante.Microsoft.AspNetCore.StaticWebAssets.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\staticwebassets\msbuild.build.Sante.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Sante.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Sante.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\staticwebassets.pack.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\staticwebassets.build.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\staticwebassets.development.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\scopedcss\bundle\Sante.styles.css
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\scopedcss\projectbundle\Sante.bundle.scp.css
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\Sante.csproj.CopyComplete
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\refint\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\Sante.pdb
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\Sante.genruntimeconfig.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\numerical-card\applications\Sante\obj\Debug\net7.0\ref\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\bin\Debug\net7.0\appsettings.Development.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\bin\Debug\net7.0\appsettings.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\bin\Debug\net7.0\Sante.staticwebassets.runtime.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\bin\Debug\net7.0\Sante.exe
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\bin\Debug\net7.0\Sante.deps.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\bin\Debug\net7.0\Sante.runtimeconfig.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\bin\Debug\net7.0\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\bin\Debug\net7.0\Sante.pdb
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\bin\Debug\net7.0\System.Data.SqlClient.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\Sante.csproj.AssemblyReference.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\Sante.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\Sante.AssemblyInfoInputs.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\Sante.AssemblyInfo.cs
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\Sante.csproj.CoreCompileInputs.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\Sante.MvcApplicationPartsAssemblyInfo.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\staticwebassets\msbuild.Sante.Microsoft.AspNetCore.StaticWebAssets.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\staticwebassets\msbuild.build.Sante.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Sante.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Sante.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\staticwebassets.pack.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\staticwebassets.build.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\staticwebassets.development.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\scopedcss\bundle\Sante.styles.css
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\Sante.csproj.CopyComplete
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\refint\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\Sante.pdb
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\Sante.genruntimeconfig.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\obj\Debug\net7.0\ref\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\bin\Debug\net7.0\Npgsql.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\bin\Debug\net7.0\Json.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\Sante\Sante\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\bin\Debug\net7.0\appsettings.Development.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\bin\Debug\net7.0\appsettings.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\bin\Debug\net7.0\Sante.staticwebassets.runtime.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\bin\Debug\net7.0\Sante.exe
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\bin\Debug\net7.0\Sante.deps.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\bin\Debug\net7.0\Sante.runtimeconfig.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\bin\Debug\net7.0\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\bin\Debug\net7.0\Sante.pdb
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\bin\Debug\net7.0\Json.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\bin\Debug\net7.0\Npgsql.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\bin\Debug\net7.0\System.Data.SqlClient.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\Sante.csproj.AssemblyReference.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\Sante.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\Sante.AssemblyInfoInputs.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\Sante.AssemblyInfo.cs
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\Sante.csproj.CoreCompileInputs.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\Sante.MvcApplicationPartsAssemblyInfo.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\staticwebassets\msbuild.Sante.Microsoft.AspNetCore.StaticWebAssets.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\staticwebassets\msbuild.build.Sante.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Sante.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Sante.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\staticwebassets.pack.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\staticwebassets.build.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\staticwebassets.development.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\scopedcss\bundle\Sante.styles.css
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\Sante.csproj.CopyComplete
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\refint\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\Sante.pdb
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\Sante.genruntimeconfig.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SApp Sante\Sante\obj\Debug\net7.0\ref\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\bin\Debug\net7.0\appsettings.Development.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\bin\Debug\net7.0\appsettings.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\bin\Debug\net7.0\Sante.staticwebassets.runtime.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\bin\Debug\net7.0\Sante.exe
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\bin\Debug\net7.0\Sante.deps.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\bin\Debug\net7.0\Sante.runtimeconfig.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\bin\Debug\net7.0\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\bin\Debug\net7.0\Sante.pdb
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\bin\Debug\net7.0\Json.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\bin\Debug\net7.0\Npgsql.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\bin\Debug\net7.0\System.Data.SqlClient.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\Sante.csproj.AssemblyReference.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\Sante.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\Sante.AssemblyInfoInputs.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\Sante.AssemblyInfo.cs
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\Sante.csproj.CoreCompileInputs.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\Sante.MvcApplicationPartsAssemblyInfo.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\staticwebassets\msbuild.Sante.Microsoft.AspNetCore.StaticWebAssets.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\staticwebassets\msbuild.build.Sante.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Sante.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Sante.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\staticwebassets.pack.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\staticwebassets.build.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\staticwebassets.development.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\scopedcss\bundle\Sante.styles.css
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\Sante.csproj.CopyComplete
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\refint\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\Sante.pdb
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\Sante.genruntimeconfig.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\numerical-card\App\SAppSante\Sante\obj\Debug\net7.0\ref\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\appsettings.Development.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\appsettings.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\Connected Services\BanqueService\ConnectedService.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\Sante.staticwebassets.runtime.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\Sante.exe
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\Sante.deps.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\Sante.runtimeconfig.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\Sante.pdb
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\Json.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\Npgsql.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\System.Data.SqlClient.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\System.Private.ServiceModel.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\System.ServiceModel.Duplex.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\System.ServiceModel.Http.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\System.ServiceModel.NetTcp.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\System.ServiceModel.Primitives.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\System.ServiceModel.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\System.ServiceModel.Security.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\Sante.csproj.AssemblyReference.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\Sante.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\Sante.AssemblyInfoInputs.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\Sante.AssemblyInfo.cs
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\Sante.csproj.CoreCompileInputs.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\Sante.MvcApplicationPartsAssemblyInfo.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\staticwebassets\msbuild.Sante.Microsoft.AspNetCore.StaticWebAssets.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\staticwebassets\msbuild.build.Sante.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Sante.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Sante.props
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\staticwebassets.pack.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\staticwebassets.build.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\staticwebassets.development.json
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\scopedcss\bundle\Sante.styles.css
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\Sante.csproj.CopyComplete
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\refint\Sante.dll
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\Sante.pdb
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\Sante.genruntimeconfig.cache
+E:\ITUNIVERSITY\S5\ArchitectureLogiciel\project\card\SAppSante\Sante\obj\Debug\net7.0\ref\Sante.dll
